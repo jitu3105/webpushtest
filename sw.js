@@ -4,7 +4,9 @@ self.addEventListener("push", (e) => {
     self.registration.showNotification(data.title, {
       icon: data.icon,
       body: data.body,
-      url: data.url,
+      data: { dateOfArrival: Date.now(), primaryKey: 2 },
+      actions: data.actions,
+      vibrate: data.vibrate,
     })
   );
 });
