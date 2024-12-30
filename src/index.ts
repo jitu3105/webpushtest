@@ -17,22 +17,22 @@ push.setVapidDetails(
 let subs = [
   {
     endpoint:
-      "https://fcm.googleapis.com/fcm/send/cprCLshEwuY:APA91bFAXNMGtBzC01SkGxUPYlBvOMt6sOt0xvb5pilBj7erUSIhTiFtxl-BC1a3QL1Y8T78i-lalAw8rLPiZd-Pfguuw6ab38nt5jNPweVacV4pHi6SOH8t2VJKAAYyAUvIgyDU6H8D",
+      "https://fcm.googleapis.com/fcm/send/dSbFnLCc2lo:APA91bEoDlIdauXmtIomV-QFYaIMWJyM3-cBwnPgJ5bXIDdzBNQLBtm-CJr4uqmlgPAeR_A3Z6smybsKPNd2Bj2fN36KttHSgW29anmZ799smNvvALltaL3e6lIE6LFTJTY9oYG0XTHv",
     expirationTime: null,
     keys: {
       p256dh:
-        "BGklgcAN-V0VkMffbX1DOBGsyOfHg62VdXCfG_Jys4XtJ3I8zS74ZEg14EBd96roEmIDiDPHe2lqVBcsevuDonI",
-      auth: "YT6sJd7MIUsV-aYbeh4AEg",
+        "BOyXRj3YY2ndLUN4nE2mOYPCjzVa7CxeWjrxcCJlqnKAp-L89x8esc0w3M7HNHOyVQdd65JtGXcPy3KvConTGg4",
+      auth: "857CEQXUtV_6LPikNFUX0g",
     },
   },
   {
     endpoint:
-      "https://fcm.googleapis.com/fcm/send/czdqC2ZCJzc:APA91bElbb8vT5-rCvsdznrK8q6PJF6s6DZ8C891IuhF__5vFNyHIR7Zww638EvUw3PpxyYW8uEnwpYXc5vTmwDy-etSVwViRMqA67CGxgh7hjAyQTGvYu49iKsT4m2VqpMRR3Ndf-rR",
+      "https://fcm.googleapis.com/fcm/send/cH1EIlnl_xQ:APA91bH9v_QunK78rQF9JdfzJPlOBf1GJFwpLVzMtzjCsHwVQbH28Bm9UAPLEYSl_pjcL6NFEy667j-tzKnZC1kkYgbogtCS0FJGGXVu_7L3f87y5oV8cPDxlhcEWGQV2a93ibx1qxLv",
     expirationTime: null,
     keys: {
       p256dh:
-        "BL3gcekEpSe0W0NFjFR7tKwPo-g3FeXE3sar_uSPcCbcBDwffPfI7dXLyxMm1AEjR1vfg9BgXzaOL97P15kv_Ts",
-      auth: "X4woets9CK918_YnKThw8w",
+        "BLCsyY7ZNatJrF6oYXDuemly1bvkfV0iIbGeYRY7ot60Smf4E2hF3VrZG40r74hh0-MHqunpkhZjMSyWdEIaN8E",
+      auth: "yZizptlFV8n7KRBzhZDQTQ",
     },
   },
 ];
@@ -41,11 +41,11 @@ subs.map((sub) => {
     icon: "https://astonishing-kulfi-ecbda1.netlify.app/logo.jpg",
     title: "ye dekho paji!",
     body: "yehe..!!! click karke link bhi khol sakte he ",
-    vibrate: [100, 50, 100],
-    actions: [
-      { icon: "/logo.jpg", action: "explore", title: "Open" },
-      { icon: "/logo.jpg", action: "close", title: "Close" },
-    ],
+    // vibrate: [100, 50, 100],
+    // actions: [
+    //   { icon: "/logo.jpg", action: "explore", title: "Open" },
+    //   { icon: "/logo.jpg", action: "close", title: "Close" },
+    // ],
     url: "https://www.youtube.com/watch?v=TFIpNcdPa98",
   });
   push.sendNotification(sub, data).catch((err) => {
