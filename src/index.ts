@@ -27,12 +27,12 @@ let subs = [
   },
   {
     endpoint:
-      "https://fcm.googleapis.com/fcm/send/f_dpO39u5DI:APA91bHkFMGzzXYKbSVgjjUkv88AETBqjrPPU0Kelu7WRsro2qM6w0_cwIx4YBDxKzhmBIMAS-0cC-qaeG_7vNfNhodazbMvBR7N9s_rLk2aQnm9Qa5S-1Hou1bCtor9slR4RGkyVckM",
+      "https://fcm.googleapis.com/fcm/send/czdqC2ZCJzc:APA91bElbb8vT5-rCvsdznrK8q6PJF6s6DZ8C891IuhF__5vFNyHIR7Zww638EvUw3PpxyYW8uEnwpYXc5vTmwDy-etSVwViRMqA67CGxgh7hjAyQTGvYu49iKsT4m2VqpMRR3Ndf-rR",
     expirationTime: null,
     keys: {
       p256dh:
-        "BDhHyp5H_t_u1UCjU8ktT8rbsVr461I7ItFC9H8YvhEor2_gX9rp2P_DN4VUf-B5hEWak-F2RuPkA6_ekD0FPMY",
-      auth: "ce9sCQeVoNdIXJdkmJv1ig",
+        "BL3gcekEpSe0W0NFjFR7tKwPo-g3FeXE3sar_uSPcCbcBDwffPfI7dXLyxMm1AEjR1vfg9BgXzaOL97P15kv_Ts",
+      auth: "X4woets9CK918_YnKThw8w",
     },
   },
 ];
