@@ -1,0 +1,15 @@
+{
+  "name": "hehehe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts"
+  },
+  "dependencies": {
+    "@types/web-push": "^3.6.4",
+    "tsc": "^2.0.4",
+    "typescript": "^5.7.2",
+    "web-push": "^3.6.7"
+  }
+}
