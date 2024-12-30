@@ -43,5 +43,7 @@ subs.map((sub) => {
     body: "yehe..!!! click karke webpage bhi khol sakte he ",
     link: "https://www.youtube.com/watch?v=TFIpNcdPa98",
   });
-  push.sendNotification(sub, data);
+  push.sendNotification(sub, data).catch((err) => {
+    console.log(err);
+  });
 });
