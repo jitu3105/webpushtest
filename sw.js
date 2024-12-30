@@ -9,17 +9,16 @@ self.addEventListener("push", (e) => {
       vibrate: data.vibrate,
     })
   );
-  notification.then((notification) => {
-    notification.addEventListener("click", (event) => {
-      const action = event.action;
-      if (action === "explore") {
-        clients.openWindow(data.url); // Use clients API to open URL
-        // Handle the action click event (e.g., open a specific webpage or close the notification)
-        console.log("Notification action clicked:", action);
-        // You can access additional information from the event object here
-      } else if (action === "close") {
-        notification.close();
-      }
-    });
+  console.log(notification);
+  notification.addEventListener("click", (event) => {
+    const action = event.action;
+    if (action === "explore") {
+      clients.openWindow(data.url); // Use clients API to open URL
+      // Handle the action click event (e.g., open a specific webpage or close the notification)
+      console.log("Notification action clicked:", action);
+      // You can access additional information from the event object here
+    } else if (action === "close") {
+      notification.close();
+    }
   });
 });
