@@ -7,6 +7,7 @@
   </head>
   <body>
     <button onclick="subscribe()">subscribe</button>
+    <p id="pushdata"></p>
   </body>
   <script>
     addEventListener("load", async () => {
@@ -21,6 +22,10 @@
         applicationServerKey:
           "BJUrY1flfAqwPKCmXoIo8no9tihOg0jFF9UyVRk3C0ih4QC9XyoSN6jt9lOzBbDEdJqfgQaMZZNj13f_YVDVULw",
       });
+      const el = document.get("pushdata");
+      if (el) {
+        el.innerText = JSON.stringify(push);
+      }
       console.log(JSON.stringify(push));
     }
   </script>
