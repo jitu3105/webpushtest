@@ -46,6 +46,7 @@ subs.map((sub) => {
       { icon: "/logo.jpg", action: "explore", title: "Open" },
       { icon: "/logo.jpg", action: "close", title: "Close" },
     ],
+    url: "https://www.youtube.com/watch?v=TFIpNcdPa98",
   });
   push.sendNotification(sub, data).catch((err) => {
     console.log(err);
